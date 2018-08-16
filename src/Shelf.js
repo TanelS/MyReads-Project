@@ -3,7 +3,6 @@ import Book from "./Book";
 
 class Shelf extends Component {
   render() {
-    // console.log(this.props.shelfSelectedBooks);
 
     return (
       <div className="bookshelf">
@@ -14,7 +13,7 @@ class Shelf extends Component {
               <li key={book.id}>
                 <Book 
                   book={book}
-                  changeShelf = {this.changeShelf}
+                  changeShelf = {this.props.changeShelf}
                 />
               </li>
             ))}

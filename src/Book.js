@@ -2,8 +2,11 @@ import React, { Component } from "react";
 
 class Book extends Component {
   render() {
-    let bookAuthors = this.props.book.authors 
-      ? this.props.book.authors : "";
+    // used for filtering out cases whn there is a case
+    // when the book author or thumbnail is missin
+    let bookAuthors = this.props.book.authors
+      ? this.props.book.authors
+      : "";
 
     let bookImage = this.props.book.imageLinks
       ? this.props.book.imageLinks.thumbnail
@@ -22,8 +25,10 @@ class Book extends Component {
           />
           <div className="book-shelf-changer">
             <select
-              onChange = {event => this.props.book.changeShelf(this.props.book, event.target.value)}
-              value = {this.props.book.shelf}
+              onChange={event =>
+                this.props.changeShelf(this.props.book, event.target.value)
+              }
+              value={this.props.book.shelf}
             >
               <option value="move" disabled>
                 Move to...
