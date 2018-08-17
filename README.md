@@ -7,7 +7,7 @@ This is a React project for the Udacity Front-End Web Developer Nanodegree Cours
 
 
 * install all project dependencies with `npm install` (ensure that [NodeJS](https://nodejs.org/) is installed)
-* start the development server with `npm start` (or * yarn start` if you have [Yarn](https://yarnpkg.com/en/) installed).
+* start the development server with `npm start` (or `yarn start` if you have [Yarn](https://yarnpkg.com/en/) installed).
 
 The app displays three bookshelves:
 
